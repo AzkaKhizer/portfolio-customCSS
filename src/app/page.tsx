@@ -12,7 +12,7 @@ export default function Home() {
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ad accusamus unde earum quas expedita obcaecati non distinctio, deleniti aliquid maxime ipsum? Placeat optio libero ea fuga?</p>
       <div className="btn-box">
         <a href='/Contact'>Hire me</a>
-        <a href="/Contact">Let's Talk</a>
+        <a href="/Contact">`Let's Talk`</a>
       </div>
     </div>
     <div className='icons'>
