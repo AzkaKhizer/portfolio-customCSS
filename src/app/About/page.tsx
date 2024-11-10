@@ -4,7 +4,7 @@ export default function About() {
       <div className="about-content">
         <h2 className="about-title">About Me</h2>
         <p className="about-description">
-          Hello! I'm Azka Khizer, a passionate Frontend Developer. I enjoy creating beautiful, functional websites and continuously improving my skills to deliver seamless user experiences.
+          Hello! I am Azka Khizer, a passionate Frontend Developer. I enjoy creating beautiful, functional websites and continuously improving my skills to deliver seamless user experiences.
         </p>
         
         <div className="skills">
