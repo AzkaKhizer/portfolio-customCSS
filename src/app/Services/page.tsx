@@ -21,7 +21,7 @@ export default function About() {
     <div className='service-card'>
       <FaInstagram className="service-icon" />
       <h3>SEO Optimization</h3>
-      <p>Improving your site's visibility on search engines with tailored SEO strategies.</p>
+      <p>`Improving your site's visibility on search engines with tailored SEO strategies.`</p>
     </div>
   </div>
 </section>
