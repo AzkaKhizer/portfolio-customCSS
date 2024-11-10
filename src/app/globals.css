@@ -252,6 +252,10 @@ body{
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 850px){
+  .icons{
+    display:none;
+  }
 
 
 .icons::before{
