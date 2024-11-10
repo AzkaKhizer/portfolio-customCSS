@@ -106,7 +106,12 @@ body{
   padding: 0 10%;
   
 }
-
+@media (max-width: 768px){
+  .home{
+    background: none;
+  }
+  
+}
 
 .home-content{
   max-width: 600px;
@@ -248,6 +253,7 @@ body{
   justify-content: space-between;
 }
 
+
 .icons::before{
   content: '';
   position:absolute;
@@ -279,6 +285,7 @@ body{
   transition: 0.5s;
 }
 
+
 .icons a:hover{
   color:#081b29
 }
@@ -299,6 +306,7 @@ body{
 .icons a:hover::before{
   width: 100%;
 }
+
 
 .home-imghover{
   position: absolute;
@@ -330,7 +338,7 @@ body{
   z-index: 100;
 }
 @media (max-width: 100px){
-  .home-imghover{
+  .home-img{
     display: none;
   }
 
@@ -466,6 +474,7 @@ content: '';
   animation: showRight 0.5s ease forwards;
   animation-delay: 0.5s;
 }
+
 
 .skills-title{
   margin-bottom: 20px;
