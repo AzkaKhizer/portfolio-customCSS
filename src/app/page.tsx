@@ -12,7 +12,7 @@ export default function Home() {
       <p>Crafting responsive and visually engaging websites with a focus on user experience and modern web technologies.</p>
       <div className="btn-box">
         <a href='/Contact'>Hire me</a>
-        <a href="/Contact">`Let us Talk`</a>
+        <a href="/Contact">Let us Talk</a>
       </div>
     </div>
     <div className='icons'>
