@@ -9,12 +9,12 @@ export default function Contact() {
     message: ''
   });
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
     console.log("Form data submitted:", formData);
     // Here, handle form submission, e.g., via API call or email integration
