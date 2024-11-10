@@ -9,10 +9,10 @@ export default function Home() {
     <div className='home-content'>
       <h1>Hi, I am Azka Khizer</h1>
       <h2>Frontend Developer</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ad accusamus unde earum quas expedita obcaecati non distinctio, deleniti aliquid maxime ipsum? Placeat optio libero ea fuga?</p>
+      <p>Crafting responsive and visually engaging websites with a focus on user experience and modern web technologies.</p>
       <div className="btn-box">
         <a href='/Contact'>Hire me</a>
-        <a href="/Contact">`Let's Talk`</a>
+        <a href="/Contact">`Let us Talk`</a>
       </div>
     </div>
     <div className='icons'>
