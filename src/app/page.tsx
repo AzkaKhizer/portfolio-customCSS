@@ -3,8 +3,6 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6"; 
 
-import { PiX } from 'react-icons/pi';
-
 export default function Home() {
   return (
     <section className='home'>
