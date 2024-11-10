@@ -22,8 +22,11 @@ export default function About() {
     </section>
   );
 }
-
-function SkillBar({ skill, level }:any) {
+type SkillBarProps = {
+  skill: string; 
+  level: number; 
+};
+function SkillBar({ skill, level }:SkillBarProps) {
   return (
     <div className="skill-bar">
       <span className="skill-label">{skill}</span>
