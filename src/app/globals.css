@@ -53,37 +53,18 @@ body{
   margin-left: 35px;
   transition: 3s;
 }
+@media (max-width: 600px){
+  .navbar a{
+    font-size: 14px;
+  }
+}
+
 
 .navbar a:hover,
 .navbar a.active {
   color:#00abf0
 }
-@media (max-width: 100px) {
-  .header {
-    padding: 15px 5%;
-  }
 
-  .logo {
-    font-size: 20px;
-  }
-
-  .navbar {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #081b29;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-  }
-
-  .navbar a {
-    font-size: 12px;
-    margin: 10px 0;
-  }
-}
 
 /* Toggle Navbar Display */
 .navbar.active {
@@ -115,14 +96,16 @@ body{
 
 .home-content{
   max-width: 600px;
-
+   z-index: 1;
 }
+
 .home-content h1{
   position: relative;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.2;
 }
+
 
 .home-content h1::before{
   content: '';
@@ -154,7 +137,7 @@ body{
   animation-delay: 1.3s;
 }
 
-.home-content p{
+.home-content p {
   position: relative;
   font-size: 16px;
   margin: 20px 0 40px;
@@ -247,17 +230,18 @@ body{
 
 .icons{
   position:absolute;
-  bottom:80px;
+  bottom:10%;
   width:170px;
   display: flex;
   justify-content: space-between;
 }
+
 @media (max-width: 850px){
   .icons{
-    display:none;
+  
+  display: none;
   }
 }
-
 
 .icons::before{
   content: '';
@@ -414,6 +398,12 @@ footer {
 .footer-social {
   display: flex;
   gap: 10px;
+}
+
+@media (min-width:800px){
+  .footer-social{
+    display: none;
+  }
 }
 
 .footer-social a {
