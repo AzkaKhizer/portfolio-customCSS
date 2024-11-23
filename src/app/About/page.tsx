@@ -1,3 +1,9 @@
+
+interface SkillBarProps {
+  skill: string;
+  level: string | number;
+}
+
 export default function About() {
   return (
     <section className="about">
@@ -23,10 +29,7 @@ export default function About() {
   );
 }
 
-interface SkillBarProps {
-  skill: string; 
-  level: string | number; 
-
+// Define SkillBar component with proper typing for props
 function SkillBar({ skill, level }: SkillBarProps) {
   return (
     <div className="skill-bar">
