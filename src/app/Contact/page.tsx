@@ -1,20 +1,20 @@
-// pages/contact.js
 "use client";
-import React, { useState } from 'react';
+
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: ''
+    message: '',
   });
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form data submitted:", formData);
     // Here, handle form submission, e.g., via API call or email integration
@@ -35,7 +35,7 @@ export default function Contact() {
             required
           />
         </div>
-        
+
         <div className="form-group">
           <label htmlFor="email">Email</label>
           <input
@@ -47,7 +47,7 @@ export default function Contact() {
             required
           />
         </div>
-        
+
         <div className="form-group">
           <label htmlFor="message">Message</label>
           <textarea
@@ -60,7 +60,9 @@ export default function Contact() {
           ></textarea>
         </div>
 
-        <button type="submit" className="submit-button">Send Message</button>
+        <button type="submit" className="submit-button">
+          Send Message
+        </button>
       </form>
     </div>
   );
