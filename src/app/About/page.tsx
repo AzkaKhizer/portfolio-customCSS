@@ -6,7 +6,7 @@ export default function About() {
         <p className="about-description">
           Hello! I am Azka Khizer, a passionate Frontend Developer. I enjoy creating beautiful, functional websites and continuously improving my skills to deliver seamless user experiences.
         </p>
-        
+
         <div className="skills">
           <h3 className="skills-title">My Skills</h3>
           <div className="skill-bars">
@@ -23,13 +23,22 @@ export default function About() {
   );
 }
 
-function SkillBar({ skill, level }:any) {
+interface SkillBarProps {
+  skill: string; 
+  level: string | number; 
+
+function SkillBar({ skill, level }: SkillBarProps) {
   return (
     <div className="skill-bar">
       <span className="skill-label">{skill}</span>
       <div className="progress">
-        <div className="progress-fill" style={{ width: level }}>
-          <span className="progress-percent">{level}</span>
+        <div
+          className="progress-fill"
+          style={{ width: typeof level === 'number' ? `${level}%` : level }}
+        >
+          <span className="progress-percent">
+            {typeof level === 'number' ? `${level}%` : level}
+          </span>
         </div>
       </div>
     </div>
