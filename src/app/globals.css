@@ -759,10 +759,4 @@ content: '';
 .submit-button:hover {
   background-color: #0080b3;
 }
-@media (max-width: 600px) 
-  .animated-element {
-    animation: none; /* Disables CSS animations */
-    transition: none; /* Disables transitions */
-  }
-}
 
