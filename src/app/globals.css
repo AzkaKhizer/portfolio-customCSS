@@ -44,6 +44,12 @@ body{
   animation-delay: .4s;
   
 }
+@media (max-width: 600px){
+  .logo::before {
+    animation: none; 
+    transition: none; 
+  }
+}
 
 .navbar a{
   font-size: 18px;
@@ -118,6 +124,13 @@ body{
   animation: showRight 1s ease forwards;
   animation-delay: 1s;
 }
+
+@media (max-width: 600px) {
+  .home-content h1::before {
+    animation: none; 
+    transition: none;
+  }
+}
 .home-content h2{
   position: relative;
   font-size: 32px;
@@ -136,7 +149,12 @@ body{
   animation: showRight 1s ease forwards;
   animation-delay: 1.3s;
 }
-
+@media (max-width: 600px){
+  .home-content h2::before {
+    animation: none; 
+    transition: none;
+  }
+}
 .home-content p {
   position: relative;
   font-size: 16px;
@@ -153,6 +171,12 @@ body{
   animation: showRight 1s ease forwards;
   animation-delay: 1.6s;
 } 
+@media (max-width: 600px) {
+  .home-content p::before {
+    animation: none;
+    transition: none; 
+  }
+}
 
 .home-content .btn-box{
   position: relative;
@@ -174,7 +198,12 @@ body{
   animation-delay: 1.9s;
   z-index: 2;
 }
-
+@media (max-width: 600px) {
+  .home-content .btn-box::before {
+    animation: none; 
+    transition: none;
+  }
+}
 .btn-box a{
   position: relative;
   display: inline-flex;
@@ -255,6 +284,12 @@ body{
   animation-delay: 2.5s;
   z-index: 2;
 } 
+@media (max-width: 600px) {
+  .icons::before{
+    animation: none;
+    transition: none; 
+  }
+}
 
 .icons a{
   position: relative;
@@ -273,7 +308,12 @@ body{
   overflow: hidden;
   transition: 0.5s;
 }
-
+@media (max-width: 600px){
+  .icons a {
+    animation: none; 
+    transition: none; 
+  }
+}
 
 .icons a:hover{
   color:#081b29
@@ -290,6 +330,12 @@ body{
   z-index: -1;
   transition: 0.5s;
 
+}
+@media (max-width: 600px) {
+  .icons a::before {
+    animation: none; 
+    transition: none; 
+  }
 }
 
 .icons a:hover::before{
@@ -452,6 +498,7 @@ content: '';
   animation-delay: 0.5s;
 }
 
+
 .about-description {
   font-size: 16px;
   line-height: 1.6;
@@ -486,6 +533,7 @@ content: '';
   animation: showRight 0.5s ease forwards;
   animation-delay: 0.5s;
 }
+
 .skill-bars::before{
   content: '';
   position:absolute;
@@ -497,6 +545,7 @@ content: '';
   animation: showRight 0.5s ease forwards;
   animation-delay: 0.5s;
 }
+
 
 .skill-bar {
   margin-bottom: 20px;
@@ -530,6 +579,7 @@ content: '';
   animation: showRight 01s ease forwards;
   animation-delay: 0.5s;
 }
+
 
 .progress-fill {
   height: 100%;
@@ -699,5 +749,11 @@ content: '';
 
 .submit-button:hover {
   background-color: #0080b3;
+}
+@media (max-width: 600px) 
+  .animated-element {
+    animation: none; /* Disables CSS animations */
+    transition: none; /* Disables transitions */
+  }
 }
 
