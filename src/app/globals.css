@@ -44,12 +44,7 @@ body{
   animation-delay: .4s;
   
 }
-@media (max-width: 600px){
-  .logo::before {
-    animation: none; 
-    
-  }
-}
+
 
 .navbar a{
   font-size: 18px;
@@ -134,12 +129,7 @@ body{
   animation-delay: 1s;
 }
 
-@media (max-width: 600px) {
-  .home-content h1::before {
-    animation: none; 
-    
-  }
-}
+
 .home-content h2{
   position: relative;
   font-size: 32px;
@@ -158,12 +148,7 @@ body{
   animation: showRight 1s ease forwards;
   animation-delay: 1.3s;
 }
-@media (max-width: 600px){
-  .home-content h2::before {
-    animation: none; 
-    
-  }
-}
+
 .home-content p {
   position: relative;
   font-size: 16px;
@@ -180,12 +165,7 @@ body{
   animation: showRight 1s ease forwards;
   animation-delay: 1.6s;
 } 
-@media (max-width: 600px) {
-  .home-content p::before {
-    animation: none;
-    
-  }
-}
+
 
 .home-content .btn-box{
   position: relative;
@@ -207,12 +187,7 @@ body{
   animation-delay: 1.9s;
   z-index: 2;
 }
-@media (max-width: 600px) {
-  .home-content .btn-box::before {
-    animation: none; 
-    
-  }
-}
+
 .btn-box a{
   position: relative;
   display: inline-flex;
@@ -293,12 +268,7 @@ body{
   animation-delay: 2.5s;
   z-index: 2;
 } 
-@media (max-width: 600px) {
-  .icons::before{
-    animation: none;
-    
-  }
-}
+
 
 .icons a{
   position: relative;
@@ -317,12 +287,7 @@ body{
   overflow: hidden;
   transition: 0.5s;
 }
-@media (max-width: 600px){
-  .icons a {
-    
-    transition: none; 
-  }
-}
+
 
 .icons a:hover{
   color:#081b29
@@ -340,12 +305,7 @@ body{
   transition: 0.5s;
 
 }
-@media (max-width: 600px) {
-  .icons a::before {
-  
-    transition: none; 
-  }
-}
+
 
 .icons a:hover::before{
   width: 100%;
@@ -488,6 +448,11 @@ footer {
   margin: 0 auto;
   color: #ededed;
   text-align: center;
+}
+@media(max-width:600px){
+  .about-container{
+    margin:5px;
+  }
 }
 
 .about-title {
